@@ -12,7 +12,7 @@ tags:
 ---
 
 ## Stetho
-[Stetho]("http://facebook.github.io/stetho/") is a debug bridge for Android, created by Facebook. Helps you use your Chrome inspector to inspect your app's Network, DB, View Hierarchy, etc.
+[Stetho](http://facebook.github.io/stetho/) is a debug bridge for Android, created by Facebook. Helps you use your Chrome inspector to inspect your app's Network, DB, View Hierarchy, etc.
 If you've ever used the Chrome inspector before, You know that tool is very useful network debugging.  
 
 These are Stetho's functions
