@@ -1,4 +1,6 @@
 ---
+layout: single
+classes: wide
 title: "Android library without initialize code likes firebase"
 categories: Android
 date: 2020-03-17 18:45:00 +0900
