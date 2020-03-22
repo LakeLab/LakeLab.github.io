@@ -251,8 +251,8 @@ C.F) You can change your build variant in the menu in Android Studio as follows.
 Now, Your code is completely separated by debug and release build variables, And It makes you safe from mistakenly leaking your network information.
 
 ## References
-[Stetho official website](http://facebook.github.io/stetho/)\
-[Glide4 and Stetho to easily debug your image loading system](https://proandroiddev.com/glide4-and-stetho-to-easily-debug-your-image-loading-system-c274d0d9966b)
+- [Stetho official website](http://facebook.github.io/stetho/)
+- [Glide4 and Stetho to easily debug your image loading system](https://proandroiddev.com/glide4-and-stetho-to-easily-debug-your-image-loading-system-c274d0d9966b)
 
 ## If you'd like to see the full codes for this post
 Please feel free to visit [here](https://github.com/LakeLab/android-network).
