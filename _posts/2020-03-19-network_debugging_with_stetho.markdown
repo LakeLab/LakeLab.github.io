@@ -2,7 +2,7 @@
 layout: single
 classes: wide
 header:
-  image: /assets/images/2020-03-19-network_debugging_with_stetho-1.png
+  image: /assets/images/2020-03-19-network_debugging_with_stetho-0.png
 categories: Android
 title: Network debugging in android with Stetho (OkHttp - Retrofit + Glide) + Separating build variants
 date: 2020-03-23 02:46:00 +0900
@@ -15,7 +15,7 @@ tags:
 [Stetho](http://facebook.github.io/stetho/) is a debug bridge for Android, created by Facebook. Helps you use your Chrome inspector to inspect your app's Network, DB, View Hierarchy, etc.
 If you've ever used the Chrome inspector before, You know that tool is very useful network debugging.  
 
-These are Stetho's functions
+These are Stetho's specifications.
 
 ![image_1](/assets/images/2020-03-19-network_debugging_with_stetho-1.png)
 
@@ -157,7 +157,7 @@ GlideApp.with(this@MainActivity)
 This is because limiting the generated API to applications allows us to have a single implementation of the API in Glide. For more details about this, Please visit [here](http://bumptech.github.io/glide/doc/generatedapi.html#availability).
 
 ### Debugging on Chrome inspector
-Open Chrome and Browse `chrome://inspect/#devices` for enjoying easy debugging :).
+Open Chrome and Browse `chrome://inspect/#devices` for enjoying easy debugging :)
 
 ![image_1](/assets/images/2020-03-19-network_debugging_with_stetho-1.png)
 
@@ -250,4 +250,10 @@ C.F) You can change your build variant in the menu in Android Studio as follows.
 
 Now, Your code is completely separated by debug and release build variables, And It makes you safe from mistakenly leaking your network information.
 
-**If you want to see the full codes about this post, Please feel free to visit [here](https://github.com/LakeLab/android-network).**
+## References
+[Stetho official website](http://facebook.github.io/stetho/)\
+[Glide4 and Stetho to easily debug your image loading system](https://proandroiddev.com/glide4-and-stetho-to-easily-debug-your-image-loading-system-c274d0d9966b)
+
+## If you'd like to see the full codes for this post
+Please feel free to visit [here](https://github.com/LakeLab/android-network).
+
