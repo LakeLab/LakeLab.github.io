@@ -17,7 +17,7 @@ If you have ever integrated firebase, you already know there is no initialize co
 ## Purpose
 Initialize an android library with an Application Context by using Content Provider. 
 
-## TLDR
+## TL;DR
 * Make Content Provider & Inject Context
 * Register your Content Provider in your library manifest
 * Use the context, or Initialize your library from your Content provider
