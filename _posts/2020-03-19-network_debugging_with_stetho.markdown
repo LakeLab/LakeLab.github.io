@@ -4,7 +4,7 @@ classes: wide
 header:
   image: /assets/images/2020-03-19-network_debugging_with_stetho-0.png
 categories: Android
-title: Network debugging in android with Stetho (OkHttp - Retrofit + Glide) + Separating build variants
+title: Network debugging in android with Stetho (OkHttp, Retrofit, Glide) + Separating build variants
 date: 2020-03-23 02:46:00 +0900
 tags:
   - Android
@@ -24,7 +24,7 @@ These are Stetho's specifications.
 ![image_3](/assets/images/2020-03-19-network_debugging_with_stetho-3.png)
 
 
-This post will be about integrating with Android libraries related with Networking (Okhttp - Retrofit, Glide). 
+This post will be about integrating with Android libraries related with Networking (OkHttp - Retrofit, Glide). 
 
 ## TL;DR
 * Integrating with Stetho
@@ -228,7 +228,7 @@ class OkHttp3GlideModule : AppGlideModule() {
 }
 ```
 
-Your manifest even can be separated by the debug variant as follows. It will be merged automatically with your manifest in main directory.
+Your manifest even can be separated by the debug variant as follows. It will be merged automatically with your manifest in the main directory.
 ```xml
 <!--AndroidManifest.xml in debug directory-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
