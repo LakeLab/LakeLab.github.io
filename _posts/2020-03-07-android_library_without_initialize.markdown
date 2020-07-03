@@ -10,7 +10,8 @@ tags:
   - Library
 ---
 
-If you have ever integrated firebase, you already know there is no initialize code. How can they get the context without initializing code? 
+If you have ever integrated firebase, you already know there is no initialize code.\
+How can they get the context without initializing code? 
 
 [The firebase blog](https://firebase.googleblog.com/2016/12/how-does-firebase-initialize-on-android.html) already posted about this topic. But this post is about a real use case with an android library, [Notifier](https://github.com/LakeLab/Notifier).
  
@@ -78,8 +79,8 @@ public boolean onCreate() {
 ```
 
 ## C.F
-### Another way for the process that is not in the main process
-For an application that must run in another process, You should either serve another way to initialize your library or make sure to avoid calling anything that requires the initialization and the context. Because Your ContentProvider onCreate won't never get invoked in another process if that process won't create any ContentProviders.
+### Notice for the applications that are not in the main process
+For an application that needs to run in another process, You should either serve another way to initialize your library or make sure to avoid calling anything that requires the initialization and the context. Because Your ContentProvider onCreate will never get invoked in another process if that process won't create any ContentProviders.
 
 ## References
 - [How does Firebase initialize on Android?](https://firebase.googleblog.com/2016/12/how-does-firebase-initialize-on-android.html)
