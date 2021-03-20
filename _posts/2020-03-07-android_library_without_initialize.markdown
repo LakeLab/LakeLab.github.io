@@ -73,7 +73,7 @@ Or You can initialize your library in onCreate method on the Content provider, w
 ```java
 @Override
 public boolean onCreate() {
-    Somelibrary.init(getContext);
+    SomeLibrary.init(getContext);
     return true;
 }
 ```
