@@ -13,7 +13,7 @@ tags:
 
 ## Stetho
 [Stetho](http://facebook.github.io/stetho/) is a debug bridge for Android, created by Facebook. Helps you use your Chrome inspector to inspect your app's Network, DB, View Hierarchy, etc.
-If you've ever used the Chrome inspector before, You know that tool is very useful network debugging.  
+If you've ever used the Chrome inspector before, You know that tool is very useful for network debugging.  
 
 These are Stetho's specifications.
 
@@ -24,7 +24,7 @@ These are Stetho's specifications.
 ![image_3](/assets/images/2020-03-19-network_debugging_with_stetho-3.png)
 
 
-This post will be about integrating with Android libraries related with Networking (OkHttp - Retrofit, Glide). 
+This post will be about integrating with Android libraries related to Networking (OkHttp - Retrofit, Glide). 
 
 ## TL;DR
 * Integrating with Stetho
@@ -143,7 +143,7 @@ After finishing making GlideModule, Register meta-data at Android manifest in th
     </application>
 </manifest>
 ```
-*C.F) This is for avoiding conflicting between your glide module and default glide module.
+*C.F) This is for avoiding conflict between your glide module and the default glide module.
  If you want to know the detail about this, You can explore [here](https://github.com/bumptech/glide/wiki/Configuration#conflicting-glidemodules).*
 
 ### Using GlideApp
@@ -163,23 +163,23 @@ Open Chrome and Browse `chrome://inspect/#devices` for enjoying easy debugging :
 
 
 ## Extra part
-It should be a disaster if your application can be debugged on a release build. So They usually use this way.
+It should be a disaster if your application can be debugged on a release build. So They usually use it this way.
 
 ```kotlin
 if (BuildConfig.DEBUG) {
      // initialize
 }
 ```
-But this way can make your codes complex and easy to make confused. So For clear and mistake-proof code, Separating build variants (Build type) will be introduced in this extra part. 
+But this way can make your codes complex and easy to make confused. So For clear and mistake-proof code, Separating builds variants (Build type) will be introduced in this extra part. 
 
 ### Separate build variants (Build type) 
 
-It's already separated by Debug/Release when you make a project. So Only Separating folder is necessary for separating build variants.
+It's already separated by Debug/Release when you make a project. So Only the Separating folder is necessary for separating build variants.
 This is my sample project structure for separating build variants.
 
 ![image_5](/assets/images/2020-03-19-network_debugging_with_stetho-4.png)
 
-Make two directories debug/release like above and Make classes of same name in each directories as follows.
+Make two directories debug/release like above and Make classes of the same name in each directory as follows.
 
 ```kotlin
 // StethoUtils in debug directory
@@ -248,7 +248,7 @@ C.F) You can change your build variant in the menu in Android Studio as follows.
 ![image_6](/assets/images/2020-03-19-network_debugging_with_stetho-4.png)
 
 
-Now, Your code is completely separated by debug and release build variables, And It makes you safe from mistakenly leaking your network information.
+Now, Your code is completely separated by debugging and release build variables, And It makes you safe from mistakenly leaking your network information.
 
 ## References
 - [Stetho official website](http://facebook.github.io/stetho/)

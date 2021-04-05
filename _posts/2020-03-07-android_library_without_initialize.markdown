@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "Android library without initialize code likes firebase"
+title: "Android library without initializing code likes firebase"
 categories: Android
 date: 2020-03-17 18:45:00 +0900
 tags:
@@ -11,7 +11,7 @@ tags:
 ---
 
 If you have ever integrated firebase, you already know there is no initialize code.\
-How can they get the context without initializing code? 
+How can they get the context without initializing the code? 
 
 [The firebase blog](https://firebase.googleblog.com/2016/12/how-does-firebase-initialize-on-android.html) already posted about this topic. But this post is about a real use case with an android library, [Notifier](https://github.com/LakeLab/Notifier).
  
@@ -24,7 +24,7 @@ Initialize an android library with an Application Context by using Content Provi
 * Use the context, or Initialize your library from your Content provider
 
 ### Make Content Provider & Inject Context
-You just need to extend the ContentProvider and implement abstract methods without any special implementations. (You can implement abstract methods for this content provider, If your library needs use contents provider)
+You just need to extend the ContentProvider and implement abstract methods without any special implementations. (You can implement abstract methods for this content provider If your library needs use contents provider)
 
 ```java
 public class ContextInjections extends ContentProvider {
@@ -62,7 +62,7 @@ For that, You can use [${applicationId}](https://developer.android.com/studio/bu
 </manifest>
 ```
 
-### Use the context, or Initialize your library from your Content provider
+### Use the context or Initialize your library from your Content provider
 
 You can use context in your library as follow.
 ```java 
